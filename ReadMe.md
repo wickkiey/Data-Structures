@@ -1,4 +1,4 @@
-## Bloom Filters [![Generic badge](https://img.shields.io/badge/<Python Package>-<Yes>-<COLOR>.svg)](https://shields.io/)   
+## Bloom Filters
 
 1. Hash the data and flag the bits in the bit array
 2. False positive can happen but not false positive. 
