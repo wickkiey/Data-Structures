@@ -10,19 +10,26 @@ B = [[5, 8, 1, 2],
     [6, 7, 3, 0],
     [4, 5, 9, 1]]
       
-result = [[0, 0, 0, 0],
-        [0, 0, 0, 0],
-        [0, 0, 0, 0]]
+# result = [[0, 0, 0, 0],
+#         [0, 0, 0, 0],
+#         [0, 0, 0, 0]]
   
-# iterating by row of A
+# # iterating by row of A
+# for i in range(len(A)):
+  
+#     # iterating by coloum by B 
+#     for j in range(len(B[0])):
+  
+#         # iterating by rows of B
+#         for k in range(len(B)):
+#             result[i][j] += A[i][k] * B[k][j]
+  
+# for r in result:
+#     print(r)
+
+import numpy as np
+r = np.zeros((len(A),len(B[0])))
 for i in range(len(A)):
-  
-    # iterating by coloum by B 
     for j in range(len(B[0])):
-  
-        # iterating by rows of B
-        for k in range(len(B)):
-            result[i][j] += A[i][k] * B[k][j]
-  
-for r in result:
-    print(r)
+        for k in range(len(A)):
+            r [i][j] += A[i][k] * B[k][j]
